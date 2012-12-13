@@ -8,6 +8,7 @@ usage:
 
 clean:
 	rm -f *.tar.bz2
+	rm -rf php-$(VERSION)
 
 fetch: php-$(VERSION).tar.bz2
 

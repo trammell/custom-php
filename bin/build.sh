@@ -1,0 +1,55 @@
+#!/bin/sh
+
+./configure --prefix=${dst} \
+   --with-config-file-path=${dst} \
+   --with-config-file-scan-dir=${dst}/conf.d \
+   --without-t1lib \
+   --disable-short-tags \
+   --with-apxs2=/usr/bin/apxs2 \
+   --enable-pcntl \
+   --with-tsrm-pthreads \
+   --with-mysqli=mysqlnd \
+   --with-mysql=mysqlnd \
+   --with-pdo-mysql \
+   --with-openssl \
+   --with-zlib \
+   --enable-sysvmsg \
+   --enable-sysvsem \
+   --enable-sysvshm \
+   --enable-bcmath \
+   --with-bz2 \
+   --enable-calendar \
+   --enable-exif \
+   --enable-ftp \
+   --with-gd \
+   --with-jpeg-dir=${dst}/usr/lib \
+   --with-png-dir=${dst}/usr/lib \
+   --with-xpm-dir=${dst}/usr/lib \
+   --enable-gd-native-ttf \
+   --enable-gd-jis-conv \
+   --with-iconv-dir \
+   --with-gettext \
+   --with-imap \
+   --with-imap-ssl \
+   --with-ldap \
+   --with-ldap-sasl \
+   --enable-mbstring \
+   --with-mcrypt \
+   --with-mhash \
+   --with-pspell \
+   --with-readline \
+   --with-snmp \
+   --enable-soap \
+   --enable-sockets \
+   --with-sqlite \
+   --enable-sqlite-utf8 \
+   --enable-wddx \
+   --with-xmlrpc \
+   --with-xsl \
+   --enable-zip \
+   --with-kerberos \
+   --with-tidy \
+   --with-curl \
+   --with-curlwrappers \
+   --enable-memory-limit
+

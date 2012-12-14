@@ -7,8 +7,10 @@ usage:
 	@echo "usage: make [clean|fetch|unpack|build]"
 
 clean:
-	rm -f *.tar.bz2
 	rm -rf php-$(VERSION)
+
+realclean:
+	rm -f *.tar.bz2
 
 fetch: php-$(VERSION).tar.bz2
 
@@ -19,5 +21,6 @@ unpack:
 	tar xjf php-$(VERSION).tar.bz2
 
 build:
+	(cd php-$(VERSION); sh ../bin/build.sh)
 
 

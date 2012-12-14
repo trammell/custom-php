@@ -1,8 +1,6 @@
 #!/bin/sh
 
-./configure --prefix=${dst} \
-   --with-config-file-path=${dst} \
-   --with-config-file-scan-dir=${dst}/conf.d \
+./configure --prefix=/usr/local/php-5.3.19 \
    --without-t1lib \
    --disable-short-tags \
    --with-apxs2=/usr/bin/apxs2 \
@@ -22,17 +20,12 @@
    --enable-exif \
    --enable-ftp \
    --with-gd \
-   --with-jpeg-dir=${dst}/usr/lib \
-   --with-png-dir=${dst}/usr/lib \
-   --with-xpm-dir=${dst}/usr/lib \
    --enable-gd-native-ttf \
    --enable-gd-jis-conv \
    --with-iconv-dir \
    --with-gettext \
    --with-imap \
    --with-imap-ssl \
-   --with-ldap \
-   --with-ldap-sasl \
    --enable-mbstring \
    --with-mcrypt \
    --with-mhash \
